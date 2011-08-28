@@ -4,7 +4,7 @@ require 'rubygems'
 require 'mongo'
 source 'http://gemcutter.org'
 
-gem "rails", "3.0.0.beta"
+gem "rails"
 gem "mongo_mapper"
 
 if defined?(BSON_C)

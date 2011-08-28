@@ -1,4 +1,14 @@
 Mongo::Application.routes.draw do |map|
+  get "users/index"
+
+  get "users/new"
+
+  get "users/create"
+
+  get "users/edit"
+
+  get "users/update"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
