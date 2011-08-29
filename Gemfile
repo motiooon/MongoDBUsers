@@ -6,8 +6,8 @@ source 'http://gemcutter.org'
 
 gem "rails"
 gem "mongo_mapper"
-gem 'carrierwave'
-gem 'carrierwave-datamapper', :require => 'carrierwave/datamapper'
+#gem 'carrierwave'
+#gem 'carrierwave-datamapper', :require => 'carrierwave/datamapper'
 
 if defined?(BSON_C)
   warn 'YAY'
