@@ -5,6 +5,7 @@ class User
   key :last_name, String
   key :age, Integer
   key :twitter, String
+  key :avatar, AvatarUploader
   timestamps!
   
   attr_accessible :first_name, :last_name, :age, :twitter
@@ -21,6 +22,5 @@ class User
   def stripfromTwitter
    "#{twitter}".sub( "@", "" )
   end
-    
-  
+      
 end  
