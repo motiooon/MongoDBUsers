@@ -1,11 +1,11 @@
 <%=form_for(@user) do |f|%>
-<%if @user.errors.any?%>
+<%if @user.errors.any? %>
 <div id="errorExplanation">
-	<h2><%pluralize(@user.errors.count, 'error')%> prohibited the user from being saved</h2>
+	<h2><%= pluralize(@user.errors.count, 'error')%> prohibited the user from being saved</h2>
 	
 	<ul>
-		<%@user.errors.full_message.each do |msg|%>
-		<li><%=msg%></li>
+		<%@user.errors.map do |k,v|%>
+		<li><%="#{k}: #{v}"%></li>
 		<%end%>
 	</ul>
 	

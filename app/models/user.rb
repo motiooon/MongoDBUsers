@@ -9,6 +9,10 @@ class User
   
   attr_accessible :first_name, :last_name, :age, :twitter
   
+  validates_presence_of :first_name
+  validates_presence_of :last_name
+  validates_presence_of :age
+  
   many :hobbies
 
   scope :smiths, where(:last_name => "Smith")
