@@ -1,13 +1,4 @@
-Mongo::Application.routes.draw do |map|
-  get "users/index"
-
-  get "users/new"
-
-  get "users/create"
-
-  get "users/edit"
-
-  get "users/update"
+Mongo::Application.routes.draw do
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -59,6 +50,9 @@ Mongo::Application.routes.draw do |map|
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
+
+root :to => "users#index"
+resources :users
 
   # See how all your routes lay out with "rake routes"
 

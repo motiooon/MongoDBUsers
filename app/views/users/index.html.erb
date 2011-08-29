@@ -1,1 +1,19 @@
- @users
+<div class="wrapperUsers">
+	
+	<a href="/users/new">Create User</a>
+	
+	<%for user in @users%> 
+	<div>
+		
+		<p><%=user.first_name%></p>
+		<p><%=user.last_name%></p>
+		<p><%=user.age%></p>
+		<p><%=user.updated_at%></p>
+		<p><a href="http://twitter.com/#!/<%=user.stripfromTwitter%>"><%=user.twitter%></a></p>
+		
+	</div>
+	<br/><br/>
+	<%end%>
+	
+</div>
+
